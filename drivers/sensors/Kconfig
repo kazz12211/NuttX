@@ -100,6 +100,13 @@ config SENSORS_BMP280
 	---help---
 		Enable driver for the Bosch BMP280 barometic pressure sensor.
 
+config SENSORS_BME280
+	bool "Bosch BME280 Barometric Pressure Sensor"
+	default n
+	select I2C
+	---help---
+		Enable driver for the Bosch BME280 barometic pressure sensor.
+
 config SENSORS_DHTXX
 	bool "DHTxx humidity/temperature Sensor support"
 	default n
